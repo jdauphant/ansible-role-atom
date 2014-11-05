@@ -1,0 +1,8 @@
+---
+- name: Download atom
+  get_url: url={{ atom_url_rpm }} dest={{atom_tmp_rpm}}
+  tags: ["packages","atom"]
+
+- name: Install atom for RedHat OS family
+  yum: name={{atom_tmp_rpm}}
+  tags: ["packages","atom"]
