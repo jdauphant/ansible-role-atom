@@ -4,5 +4,5 @@
   tags: ["packages","atom"]
 
 - name: Install atom for RedHat OS family
-  yum: name={{atom_tmp_rpm}}
+  package: name={{atom_tmp_rpm}} state=latest
   tags: ["packages","atom"]
