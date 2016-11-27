@@ -4,5 +4,6 @@
   tags: ["packages","atom"]
 
 - name: Install atom for Debian OS family
+  become: yes
   apt: deb={{atom_tmp_deb}}
   tags: ["packages","atom"]
